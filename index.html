@@ -20,12 +20,12 @@
     <title>Tip calculator app</title>
   </head>
   <body>
-    <img src="./images/logo.svg" alt="logo" />
+    <img id="logo" src="./images/logo.svg" alt="logo" />
     <main class="app">
       <div class="section1">
         <div class="form">
           <div class="holder">
-            <label class="label" for="money">Bill</label>
+            <label id="money" class="label" for="money">Bill</label>
             <div class="input__group">
               <img src="./images/icon-dollar.svg" alt="dollar-icon" />
               <input type="text" name="money" placeholder="0.0" id="money" />
@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="holder">
-            <label class="label" for="">Select Tip %</label>
+            <label class="label" for="number">Select Tip %</label>
             <div class="button__group">
               <button class="btn" data-tax="0.05">5%</button>
               <button class="btn" data-tax="0.10">10%</button>
