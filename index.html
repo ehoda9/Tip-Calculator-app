@@ -20,14 +20,16 @@
     <title>Tip calculator app</title>
   </head>
   <body>
-    <img id="logo" src="./images/logo.svg" alt="logo" />
+    <header class="header">
+      <img id="logo" src="./images/logo.svg" alt="logo" />
+    </header>
     <main class="app">
       <div class="section1">
         <div class="form">
           <div class="holder">
-            <label id="money" class="label" for="money">Bill</label>
+            <label class="label" for="money">Bill</label>
             <div class="input__group">
-              <img src="./images/icon-dollar.svg" alt="dollar-icon" />
+              <img id="dollar" src="./images/icon-dollar.svg" alt="dollar-icon" />
               <input type="text" name="money" placeholder="0.0" id="money" />
               <span class="billError"></span>
             </div>
@@ -52,7 +54,7 @@
           <div class="holder">
             <label class="label" for="people"> Number of People</label>
             <div class="input__group">
-              <img src="./images/icon-person.svg" alt="person-icon" />
+              <img id="person" src="./images/icon-person.svg" alt="person-icon" />
               <input type="text" name="people" id="people" placeholder="0" />
               <span class="peopleError"></span>
             </div>
