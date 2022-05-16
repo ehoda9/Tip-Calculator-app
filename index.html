@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <img src="./images/logo.svg" alt="logo" />
+    <main class="app">
+      <div class="section1">
+        <div class="form">
+          <div class="holder">
+            <label class="label" for="money">Bill</label>
+            <div class="input__group">
+              <img src="./images/icon-dollar.svg" alt="dollar-icon" />
+              <input type="text" name="money" placeholder="0.0" id="money" />
+              <span class="billError"></span>
+            </div>
+          </div>
+          <div class="holder">
+            <label class="label" for="">Select Tip %</label>
+            <div class="button__group">
+              <button class="btn" data-tax="0.05">5%</button>
+              <button class="btn" data-tax="0.10">10%</button>
+              <button class="btn" data-tax="0.15">15%</button>
+              <button class="btn" data-tax="0.25">25%</button>
+              <button class="btn" data-tax="0.50">50%</button>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                class="btn"
+                placeholder="CUSTOM"
+              />
+            </div>
+          </div>
+          <div class="holder">
+            <label class="label" for="people"> Number of People</label>
+            <div class="input__group">
+              <img src="./images/icon-person.svg" alt="person-icon" />
+              <input type="text" name="people" id="people" placeholder="0" />
+              <span class="peopleError"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="calculator">
+          <div class="tip">
+            <h1 class="text">
+              Tip Amount
+              <span class="person">/ person</span>
+            </h1>
+            <h2 class="output tip"></h2>
+          </div>
+          <div class="total">
+            <h1 class="text">
+              Total
+              <span class="person">/ person</span>
+            </h1>
+            <h2 class="output total"></h2>
+          </div>
+        </div>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
